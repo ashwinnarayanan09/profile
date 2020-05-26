@@ -31,6 +31,19 @@
     /* Other styles here */
 }
 
+#spring{
+-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+#spring:hover {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+
+
+
   </style>
 
 </head>
@@ -251,7 +264,7 @@
             <i class="fab fa-java"></i>
           </li>
            <li class="list-inline-item">
-            <img src="img\spring.png">
+            <img id="spring" src="img\spring.png">
           </li>
         </ul>
 
